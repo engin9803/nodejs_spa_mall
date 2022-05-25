@@ -1,23 +1,23 @@
 const mongoose = require("mongoose");
-const goodsSchema = mongoose.Schema({
+const goodsSchema = new mongoose.Schema({
     goodsId: {
         type : Number,
-        require : true,
-        unique : true,
+        required : true,
+        unique : true
     },
     name: {
         type: String,
-        require : true,
-        unique : true,
+        required : true,
+        unique : true
     },
     thumbnailUrl: {
-        type: String,
+        type: String
     },
     category : {
-        type: String,
+        type: String
     },
     price : {
-        type: String,
+        type: Number
     }
 });
 
